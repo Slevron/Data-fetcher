@@ -1,0 +1,47 @@
+{
+  "name": "data-fetcher-api",
+  "version": "1.0.0",
+  "description": "'Revolution the world'",
+  "devDependencies": {
+    "@types/node": "^8.10.66",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^15.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "3.3.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-cors": "0.0.0",
+    "@types/koa-helmet": "^6.0.1",
+    "@types/koa-router": "^7.4.0",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "dtslint": "^3.5.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-cors": "0.0.16",
+    "koa-helmet": "^6.0.0",
+    "koa-jwt": "^3.6.0",
+    "koa-router": "^8.0.8",
+    "mysql": "^2.14.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.2.24"
+  },
+  "scripts": {
+    "start": "npm-run-all kill build server watch",
+    "test": "jest",
+    "kill": "pm2 kill",
+    "build": "tsc",
+    "server": "pm2 start",
+    "watch": "tsc --watch"
+  }
+}
