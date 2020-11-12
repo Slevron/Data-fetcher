@@ -1,4 +1,10 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity()
 export class SteamGames {
@@ -13,7 +19,8 @@ export class SteamGames {
   public appid!: string;
 
   @Column({
-    type: 'text',
+    charset: 'utf8mb4',
+    type: 'longtext',
   })
   public name!: string;
 
